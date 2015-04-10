@@ -1,0 +1,2 @@
+MeQuanta Strategy Platform
+==========================
