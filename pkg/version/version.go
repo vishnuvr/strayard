@@ -4,6 +4,8 @@ import (
 	"fmt"
 
 	kubeversion "github.com/GoogleCloudPlatform/kubernetes/pkg/version"
+	osoversion "github.com/openshift/origin/pkg/version"
+	
 	"github.com/spf13/cobra"
 )
 
