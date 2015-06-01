@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+	<title>StraYard Web Dashboard</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+<body class="dashboard-sy">
+  <nav class="navbar navbar-default navbar-pf" role="navigation">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
+	    <span class="sr-only">Toggle navigation</span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" id="strayard-logo" href="./">
+	    <img src="images/strayard-logo-thin.svg" alt="StraYard">
+	  </a>
+	</div>
+  </nav>
+  <div ng-view id="content-wrap"></div>
+  <script src="config.js"></script>
+</body>
+</html>
