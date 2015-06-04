@@ -1,0 +1,10 @@
+{
+  "swaggerVersion": "1.2",
+  "apiVersion": "v1",
+  "resourcePath": "/api/v1",
+  "info": {
+   "title": "StraYard v1 REST API",
+   "description": "The StraYard API allows you to manage the cluster infrastructure."
+  },
+  "apis": []
+}

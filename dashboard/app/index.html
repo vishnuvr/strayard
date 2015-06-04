@@ -1,11 +1,20 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-	<title>StraYard Web Dashboard</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>StraYard Web Dashboard</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" href="images/strayard_logo.png"/>
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/messenger/build/css/messenger-theme-flat.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <!-- endbuild -->
+  <style type="text/css"></style>
+</head>
 <body class="dashboard-sy">
   <nav class="navbar navbar-default navbar-pf" role="navigation">
 	<div class="navbar-header">
@@ -21,6 +30,30 @@
 	</div>
   </nav>
   <div ng-view id="content-wrap"></div>
+  <noscript class="attention-message"><h1>To use StraYard, please enable JavaScript.</h1></noscript>
   <script src="config.js"></script>
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/patternfly/components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/patternfly/components/bootstrap-select/bootstrap-select.js"></script>
+  <script src="bower_components/messenger/build/js/messenger.js"></script>
+  <script src="bower_components/messenger/build/js/messenger-theme-flat.js"></script>
+  <script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
+  <!-- endbower -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/strategies.js"></script>
+  <script src="scripts/controllers/strategy.js"></script>
+  <script src="scripts/services/login.js"></script>
+  <script src="scripts/services/logout.js"></script>
+  <!-- endbuild -->
 </body>
 </html>

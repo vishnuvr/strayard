@@ -1,9 +1,97 @@
 {
 	"ImportPath": "github.com/strayard/strayard",
-	"GoVersion": "go1.3.1",
+	"GoVersion": "go1.4.2",
 	"Packages": [
 		"./..."
 	],
 	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/go-uuid/uuid",
+			"Comment": "null-15",
+			"Rev": "35bc42037350f0078e3c974c6ea690f1926603ab"
+		},
+		{
+			"ImportPath": "github.com/GoogleCloudPlatform/kubernetes/pkg/types",
+			"Comment": "v0.18.0-157-g5520386",
+			"Rev": "5520386b180d3ddc4fa7b7dfe6f52642cc0c25f3"
+		},
+		{
+			"ImportPath": "github.com/GoogleCloudPlatform/kubernetes/pkg/util",
+			"Comment": "v0.18.0-157-g5520386",
+			"Rev": "5520386b180d3ddc4fa7b7dfe6f52642cc0c25f3"
+		},
+		{
+			"ImportPath": "github.com/GoogleCloudPlatform/kubernetes/pkg/version",
+			"Comment": "v0.18.0-157-g5520386",
+			"Rev": "5520386b180d3ddc4fa7b7dfe6f52642cc0c25f3"
+		},
+		{
+			"ImportPath": "github.com/coreos/go-systemd/daemon",
+			"Comment": "v2-55-gd7b0894",
+			"Rev": "d7b08942d0d85bfcb4694864881c4af7324784d2"
+		},
+		{
+			"ImportPath": "github.com/davecgh/go-spew/spew",
+			"Rev": "f9f629a1d082960e5d1747f33c2b378612615fea"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/mount",
+			"Comment": "v1.4.1-3886-g63823cd",
+			"Rev": "63823cd6c103efc2f71d64aa3834112b6ddc9fad"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/units",
+			"Comment": "v1.4.1-3886-g63823cd",
+			"Rev": "63823cd6c103efc2f71d64aa3834112b6ddc9fad"
+		},
+		{
+			"ImportPath": "github.com/docker/libcontainer/cgroups",
+			"Comment": "v2.1.0-14-gbe81d57",
+			"Rev": "be81d577fda213f165f49b6d19ff8ebe2d93f5aa"
+		},
+		{
+			"ImportPath": "github.com/docker/libcontainer/configs",
+			"Comment": "v2.1.0-14-gbe81d57",
+			"Rev": "be81d577fda213f165f49b6d19ff8ebe2d93f5aa"
+		},
+		{
+			"ImportPath": "github.com/docker/libcontainer/system",
+			"Comment": "v2.1.0-14-gbe81d57",
+			"Rev": "be81d577fda213f165f49b6d19ff8ebe2d93f5aa"
+		},
+		{
+			"ImportPath": "github.com/golang/glog",
+			"Rev": "44145f04b68cf362d9c4df2182967c2275eaefed"
+		},
+		{
+			"ImportPath": "github.com/google/gofuzz",
+			"Rev": "bbcb9da2d746f8bdbd6a936686a0a6067ada0ec5"
+		},
+		{
+			"ImportPath": "github.com/inconshreveable/mousetrap",
+			"Rev": "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+		},
+		{
+			"ImportPath": "github.com/jteeuwen/go-bindata",
+			"Comment": "v3.0.7-50-g83a44d5",
+			"Rev": "83a44d533bf65a1d05c51314ec58d6ee72ec2ddb"
+		},
+		{
+			"ImportPath": "github.com/openshift/origin/pkg/version",
+			"Comment": "v0.5.3-187-g6f51e90",
+			"Rev": "6f51e90479f28f4fb28c67eebdc42f52426e51cb"
+		},
+		{
+			"ImportPath": "github.com/spf13/cobra",
+			"Rev": "8f5946caaeeff40a98d67f60c25e89c3525038a3"
+		},
+		{
+			"ImportPath": "github.com/spf13/pflag",
+			"Rev": "5644820622454e71517561946e3d94b9f9db6842"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/ssh",
+			"Rev": "c10c31b5e94b6f7a0283272dc2bb27163dcea24b"
+		}
 	]
 }

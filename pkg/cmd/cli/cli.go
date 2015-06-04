@@ -21,7 +21,7 @@ func NewCommandCLI(name, fullName string) *cobra.Command {
 		Run: func(c *cobra.Command, args []string) {
 			c.SetOutput(os.Stdout)
 			c.Help()
-		}
+		},
 	}
     return root;
 }

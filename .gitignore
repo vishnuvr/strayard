@@ -1,0 +1,5 @@
+/_output
+.DS_Store
+.idea
+
+pkg/dashboard/bindata.go
