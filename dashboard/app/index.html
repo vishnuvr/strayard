@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>StraYard Web Dashboard</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="apple-touch-icon" href="images/strayard_logo.png"/>
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/messenger/build/css/messenger-theme-flat.css" />
@@ -13,7 +12,6 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" type="text/css" href="styles/main.css">
   <!-- endbuild -->
-  <style type="text/css"></style>
 </head>
 <body class="dashboard-sy">
   <nav class="navbar navbar-default navbar-pf" role="navigation">
@@ -25,13 +23,14 @@
 	    <span class="icon-bar"></span>
 	  </button>
 	  <a class="navbar-brand" id="strayard-logo" href="./">
-	    <img src="images/strayard-logo-thin.svg" alt="StraYard">
+	    <img src="images/strayard_logo_thin.svg" alt="StraYard">
 	  </a>
 	</div>
   </nav>
   <div ng-view id="content-wrap"></div>
   <noscript class="attention-message"><h1>To use StraYard, please enable JavaScript.</h1></noscript>
   <script src="config.js"></script>
+  <!-- build:js(.) scripts/vendor.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
@@ -48,6 +47,7 @@
   <script src="bower_components/messenger/build/js/messenger-theme-flat.js"></script>
   <script src="bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
   <!-- endbower -->
+  <!-- endbuild -->
   <!-- build:js({.tmp,app}) scripts/scripts.js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/strategies.js"></script>

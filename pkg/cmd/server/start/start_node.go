@@ -4,7 +4,7 @@ import (
 	"github.com/coreos/go-systemd/daemon"
 )
 type NodeOptions struct {
-	NodeArgs *NodeArgs
+	//NodeArgs *NodeArgs
 	ConfigFile string
 }
 

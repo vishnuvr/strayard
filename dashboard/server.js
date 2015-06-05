@@ -1,5 +1,5 @@
 var express = require('express')
 var serveStatic = require('serve-static')
 var app = express()
-app.use(serveStatic('app', {'index': ['index.html']}))
+app.use(serveStatic('dist', {'index': ['index.html']}))
 app.listen(3000)
