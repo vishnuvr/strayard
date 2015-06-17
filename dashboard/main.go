@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-    log.Fatal(http.ListenAndServe(":8080", http.FileServer(assetFS())))
+    log.Fatal(http.ListenAndServe(":8080", http.FileServer(http.Dir("/tmp"))))
 }
 

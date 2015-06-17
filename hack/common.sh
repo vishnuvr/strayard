@@ -35,7 +35,7 @@ sy::build::build_binaries() {
     #GOPATH=${SY_GOPATH}
     #export GOPATH
     local targets=("cmd/strayard")
-    local binaries=("github.com/strayard/strayard/cmd/strayard")
+    local binaries="github.com/strayard/strayard/dashboard"
     local platforms=($(sy::build::host_platform))
     local platform
     for platform in "${platforms[@]}"; do

@@ -1,17 +1,14 @@
-FROM strayard/base
+FROM golang:1.4
 
-RUN yum install -y golang && yum clean all
+RUN apt-get update && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /go/src/github.com/strayard/strayard
-ADD .   /go/src/github.com/strayard/strayard
-ENV GOPATH /go
-ENV PATH $PATH:$GOROOT/bin:$GOPATH/bin
+ENV STRAYARD_DIR /go/src/github.com/strayard/strayard
+ENV GOPATH $STRAYARD_DIR/Godeps/_workspace:$GOPATH
+ENV PATH $GOPATH/bin:$PATH
 
-RUN go get github.com/strayard/strayard && \
-    hack/build-go.sh && \
-    cp _output/local/go/bin/* /usr/bin/ && \
-    mkdir -p /var/lib/strayard
+WORKDIR $STRAYARD_DIR
+COPY . $STRAYARD_DIR
+RUN make clean build
 
-EXPOSE 8080 8443
-WORKDIR /var/lib/strayard
-ENTRYPOINT ["/usr/bin/strayard"]
+EXPOSE 8080 
+ENTRYPOINT ["dashboard"]

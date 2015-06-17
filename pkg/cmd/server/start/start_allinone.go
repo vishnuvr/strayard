@@ -3,20 +3,14 @@ package start
 import (
 	"fmt"
 	"io"
-
-	"github.com/GoogleCloudPlatform/kubernetes/pkg/util"
 	"github.com/coreos/go-systemd/daemon"
-	cmdutil "github.com/openshift/origin/pkg/cmd/util"
 	"github.com/spf13/cobra"
 )
 
 type AllInOneOptions struct {
 	CreateCerts      bool
-	ConfigDir        util.StringFlag
 	MasterConfigFile string
 	NodeConfigFile   string
-
-	Output cmdutil.Output
 }
 
 const allinoneLongDesc = `Start a StraYard all-in-one server
@@ -32,7 +26,7 @@ you terminate the process.  This command delegates to "strayard start master" an
 
 // This function provides a CLI handler for 'start' command
 func NewCommandStartAllInOne(fullName string, out io.Writer) (*cobra.Command, *AllInOneOptions) {
-	options := &AllInOneOptions{Output: cmdutil.Output{out}}
+	options := &AllInOneOptions{}
 
 	cmds := &cobra.Command{
 		Use:   "start",
@@ -47,17 +41,3 @@ func NewCommandStartAllInOne(fullName string, out io.Writer) (*cobra.Command, *A
 	cmds.SetOutput(out)
 	return cmds, options
 }
-
-//func (o AllInOneOptions) StartAllInOne() error {
-//	masterOptions := MasterOptions{o.MasterConfigFile}
-//	if err := masterOptions.RunMaster(); err != nil {
-//		return err
-//	}
-
-//	nodeOptions := NodeOptions{o.NodeConfigFile}
-//	if err := nodeOptions.RunNode(); err != nil {
-//		return err
-//	}
-
-//	return nil
-//}
