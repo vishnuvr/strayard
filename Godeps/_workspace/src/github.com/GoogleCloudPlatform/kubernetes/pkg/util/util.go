@@ -508,3 +508,20 @@ func GetClient(req *http.Request) string {
 	}
 	return "unknown"
 }
+
+func ShortenString(str string, n int) string {
+	if len(str) <= n {
+		return str
+	} else {
+		return str[:n]
+	}
+}
+
+func FileExists(filename string) (bool, error) {
+	if _, err := os.Stat(filename); os.IsNotExist(err) {
+		return false, nil
+	} else if err != nil {
+		return false, err
+	}
+	return true, nil
+}
